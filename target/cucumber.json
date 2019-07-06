@@ -1,0 +1,108 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6394301762,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "As a manager login the page",
+        "description": "",
+        "id": "login-functionality;as-a-manager-login-the-page",
+        "after": [
+          {
+            "result": {
+              "duration": 150442225,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2115496747,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on the login page",
+            "match": {
+              "location": "Login_Steps.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3621362302,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user logs in using \"in_ex_manager2@info.com\" and \"LLighg89\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"in_ex_manager2@info.com\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"LLighg89\"",
+                  "offset": 49
+                }
+              ],
+              "location": "Login_Steps.user_logs_in_using_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 63510820,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Expenses title should be displayed",
+            "match": {
+              "location": "Login_Steps.expenses_title_should_be_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 112565048,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user should click Expenses button",
+            "match": {
+              "location": "Login_Steps.user_should_click_Expenses_button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "login functionality",
+    "description": "",
+    "id": "login-functionality",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/login.feature",
+    "tags": []
+  }
+]
