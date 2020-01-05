@@ -1,58 +1,61 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/home.feature");
 formatter.feature({
-  "name": "login functionality",
+  "name": "",
   "description": "",
-  "keyword": "Feature"
-});
-formatter.scenario({
-  "name": "As a manager login the page",
-  "description": "",
-  "keyword": "Scenario",
+  "keyword": "Feature",
   "tags": [
     {
-      "name": "@wip"
+      "name": "@all"
     }
   ]
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
 });
 formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "user is on the login page",
+  "name": "user on the login page",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "Login_Steps.user_is_on_the_login_page()"
+  "location": "Home_steps.user_on_the_login_page()"
 });
 formatter.result({
   "status": "passed"
 });
+formatter.scenario({
+  "name": "login bookit",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@all"
+    },
+    {
+      "name": "@for"
+    }
+  ]
+});
 formatter.step({
-  "name": "user logs in using \"in_ex_manager2@info.com\" and \"LLighg89\"",
+  "name": "user logs in as a teacher",
   "keyword": "When "
 });
 formatter.match({
-  "location": "Login_Steps.user_logs_in_using_and(String,String)"
+  "location": "Home_steps.user_logs_in_as_a_teacher()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Expenses title should be displayed",
+  "name": "homepage should be displayed",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Login_Steps.expenses_title_should_be_displayed()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user should click Expenses button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Login_Steps.user_should_click_Expenses_button()"
+  "location": "Mapdetail_steps.homepage_should_be_displayed()"
 });
 formatter.result({
   "status": "passed"

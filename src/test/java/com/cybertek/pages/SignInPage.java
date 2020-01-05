@@ -14,7 +14,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
             PageFactory.initElements(Driver.getDriver(), this);
         }
 
-        @FindBy(name = "email")
+        //@FindBy(name = "email")
+       // public WebElement email;
+        @FindBy(css = "input[name='email']")
         public WebElement email;
 
         @FindBy(name = "password")
@@ -23,14 +25,17 @@ import org.openqa.selenium.support.ui.WebDriverWait;
         @FindBy(css = "button[type='submit']")
         public WebElement signIn;
 
+        public static String currentUserEmail;
+
 
         public void login(String email, String password){
+            currentUserEmail=email;
             this.email.sendKeys(email);
             this.password.sendKeys(password);
             signIn.click();
 
-            WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 5);
-            wait.until(ExpectedConditions.urlContains("map"));
+//            WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 5);
+//            wait.until(ExpectedConditions.urlContains("map"));
 
         }
 }

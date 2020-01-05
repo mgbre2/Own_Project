@@ -34,7 +34,7 @@ import java.util.concurrent.TimeUnit;
             }
 
             System.out.println("Closing driver");
-            Driver.closeDriver();
+            //Driver.closeDriver();
         }
 
         @Before(value = "@teacher", order = 11)

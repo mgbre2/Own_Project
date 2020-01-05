@@ -1,12 +1,33 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2302587084,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user on the login page",
+            "match": {
+              "location": "Home_steps.user_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
       {
         "before": [
           {
             "result": {
-              "duration": 6394301762,
+              "duration": 3629350909,
               "status": "passed"
             },
             "match": {
@@ -14,14 +35,14 @@
             }
           }
         ],
-        "line": 5,
-        "name": "As a manager login the page",
+        "line": 6,
+        "name": "login bookit",
         "description": "",
-        "id": "login-functionality;as-a-manager-login-the-page",
+        "id": ";login-bookit",
         "after": [
           {
             "result": {
-              "duration": 150442225,
+              "duration": 181460,
               "status": "passed"
             },
             "match": {
@@ -34,75 +55,53 @@
         "steps": [
           {
             "result": {
-              "duration": 2115496747,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user is on the login page",
-            "match": {
-              "location": "Login_Steps.user_is_on_the_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3621362302,
+              "duration": 463749166,
               "status": "passed"
             },
             "line": 7,
-            "name": "user logs in using \"in_ex_manager2@info.com\" and \"LLighg89\"",
+            "name": "user logs in as a teacher",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"in_ex_manager2@info.com\"",
-                  "offset": 19
-                },
-                {
-                  "val": "\"LLighg89\"",
-                  "offset": 49
-                }
-              ],
-              "location": "Login_Steps.user_logs_in_using_and(String,String)"
+              "location": "Home_steps.user_logs_in_as_a_teacher()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 63510820,
+              "duration": 2925922769,
               "status": "passed"
             },
             "line": 8,
-            "name": "Expenses title should be displayed",
+            "name": "homepage should be displayed",
             "match": {
-              "location": "Login_Steps.expenses_title_should_be_displayed()"
+              "location": "Mapdetail_steps.homepage_should_be_displayed()"
             },
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 112565048,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user should click Expenses button",
-            "match": {
-              "location": "Login_Steps.user_should_click_Expenses_button()"
-            },
-            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@wip"
+            "name": "@all"
+          },
+          {
+            "name": "@for"
           }
         ]
       }
     ],
-    "name": "login functionality",
+    "name": "",
     "description": "",
-    "id": "login-functionality",
+    "id": "",
     "keyword": "Feature",
-    "uri": "src/test/resources/features/login.feature",
-    "tags": []
+    "uri": "src/test/resources/features/home.feature",
+    "tags": [
+      {
+        "name": "@all",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]
